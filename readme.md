@@ -56,6 +56,8 @@ Se utilizaron claves sustitutas en dimensiones como location y ship_mode para:
 - Evitar dependencia de claves naturales inconsistentes
 - Mejorar la integridad de las relaciones
 
+---
+
 ### Uso de modelo estrella
 
 Se implementó un modelo dimensional tipo estrella para optimizar consultas analíticas y separar correctamente hechos y dimensiones.
