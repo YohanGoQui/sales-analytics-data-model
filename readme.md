@@ -24,7 +24,7 @@ Este modelo permite separar atributos descriptivos de métricas, optimizando el 
 
 Imagen del modelo:
 
-![Modelo Estrella](model/star_schema_model.png)
+![Modelo Estrella](Model/ModeloEstrella.png)
 
 ---
 
