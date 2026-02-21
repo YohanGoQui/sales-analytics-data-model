@@ -62,6 +62,20 @@ Se implementó un modelo dimensional tipo estrella para optimizar consultas anal
 
 ---
 
+## Capa semántica y medidas analíticas
+
+Se implementaron medidas DAX dentro del modelo de Power BI para soportar el análisis y monitoreo de métricas clave.
+
+Estas medidas permiten:
+
+- Calcular profit total
+- Identificar transacciones con pérdidas
+- Analizar impacto de descuentos en la rentabilidad
+- Evaluar tiempos de entrega
+- Detectar anomalías operativas
+
+Las medidas fueron construidas sobre el modelo dimensional, asegurando consistencia y precisión en los cálculos analíticos.
+
 ## Resultado
 
 El resultado es un modelo dimensional funcional, estructurado y optimizado para análisis, que resuelve problemas de integridad presentes en el dataset original y permite realizar consultas analíticas de forma eficiente.
