@@ -1,0 +1,34 @@
+## Hallazgos técnicos y de calidad de datos
+
+Durante el análisis y modelado del dataset, se identificaron los siguientes hallazgos relevantes:
+
+- Se detectó ausencia de reglas de negocio consistentes en la asignación de descuentos, lo que sugiere falta de control o validación en el proceso de generación de órdenes.
+
+- No existe una relación consistente entre precio, descuento, cantidad, segmento de cliente o ubicación, lo que indica posibles deficiencias en la lógica de pricing o ausencia de políticas definidas.
+
+- Se identificaron descuentos superiores al 20% asociados de forma recurrente a transacciones con profit negativo, lo que evidencia un riesgo directo en la rentabilidad.
+
+- Se observaron descuentos extremos de hasta el 80%, lo cual representa una anomalía significativa desde el punto de vista operativo y financiero.
+
+- Se detectaron múltiples períodos con profit negativo, destacando enero de 2015 como el mes con mayor pérdida agregada.
+
+- Se identificaron 904 pedidos con tiempos de entrega superiores a 5 días. Dentro del modo de envío estándar, aproximadamente el 30% de las órdenes presentan retrasos superiores a este umbral, lo que sugiere problemas potenciales en la operación logística o falta de control en los SLA.
+
+- Se identificaron subcategorías con alto riesgo financiero, especialmente:
+  - Tables
+  - Bookcases
+  - Supplies
+
+Estas subcategorías presentan alta frecuencia de descuentos asociados a profit negativo.
+
+---
+
+## Implicaciones técnicas
+
+Estos hallazgos evidencian problemas de calidad y gobernanza de datos, incluyendo:
+
+- Falta de reglas de validación en descuentos
+- Ausencia de controles de integridad en procesos comerciales
+- Necesidad de monitoreo continuo de métricas críticas como profit, discount y delivery time
+
+El modelo dimensional implementado permite detectar y monitorear este tipo de anomalías de forma estructurada y eficiente.
