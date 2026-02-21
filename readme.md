@@ -58,12 +58,6 @@ Se utilizaron claves sustitutas en dimensiones como location y ship_mode para:
 
 ---
 
-### Uso de modelo estrella
-
-Se implementó un modelo dimensional tipo estrella para optimizar consultas analíticas y separar correctamente hechos y dimensiones.
-
----
-
 ## Capa semántica y medidas analíticas
 
 Se implementaron medidas DAX dentro del modelo de Power BI para soportar el análisis y monitoreo de métricas clave.
@@ -77,6 +71,13 @@ Estas medidas permiten:
 - Detectar anomalías operativas
 
 Las medidas fueron construidas sobre el modelo dimensional, asegurando consistencia y precisión en los cálculos analíticos.
+
+---
+
+### Uso de modelo estrella
+
+Se implementó un modelo dimensional tipo estrella para optimizar consultas analíticas y separar correctamente hechos y dimensiones.
+
 
 ## Resultado
 
